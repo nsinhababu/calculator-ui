@@ -1,6 +1,9 @@
 import './App.css';
 // Import Components
 import Toggle from './components/Toggle';
+import ButtonBox from './components/ButtonBox';
+// Import data
+import { timeFrame } from './const';
 function App() {
   return (
     <div className='App'>
@@ -15,7 +18,6 @@ function App() {
           />
           <p className='cake'>cake</p>
         </div>
-
         <div className='toggle-container'>
           <Toggle />
           <p className='currency'>USD</p>
@@ -29,6 +31,13 @@ function App() {
           <p>$100</p>
           <span>~ $20.82</span>
         </div>
+        <p className='time-frame'>Timeframe</p>
+        <ButtonBox
+          classNAme='time-frame-container full-width'
+          arr={Object.keys(timeFrame)}
+          obj={timeFrame}
+        />
+        <div className='accelerated-pay'></div>
       </div>
     </div>
   );
