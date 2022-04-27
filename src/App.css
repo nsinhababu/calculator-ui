@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  position: relative;
+  width: 534px;
+  height: 697px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 0 25px;
+}
+.close-btn {
+  background: url('../public/assets/icon.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: 25px;
+  top: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.logo {
+  position: absolute;
+  left: 25px;
+  top: 30px;
+  width: 171px;
+  height: 35px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 34px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cake-container {
   display: flex;
-  flex-direction: column;
+  position: absolute;
+  top: 64px;
+  left: 367px;
+  /* justify-content: space-around; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 6px;
+  width: fit-content;
+}
+.cake-logo {
+  /* position: absolute;
+  right: 155px;
+  top: 70px; */
+  width: 12px;
+  height: 12px;
+}
+.cake,
+.currency {
+  color: #808080;
+}
+.toggle-container {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  position: absolute;
+  right: 25px;
+  top: 65px;
+}
+.toggle-container > .toggle-label {
+  width: 24px;
+  height: 14px;
+  background: #f8c400;
+  border-radius: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.toggle-container > .toggle-label::before {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 2px;
+}
+.toggle-container > #toggle-checkbox {
+  position: absolute;
+  right: 39px;
+  width: 24px;
+  height: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.full-width {
+  position: absolute;
+  left: 25px;
+  width: 483px;
+}
+
+.data-display {
+  top: 97px;
+
+  height: 60px;
+  background: #f9fafb;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.data-display > p {
+  width: 136px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.balance-container {
+  top: 166px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  height: fit-content;
+}
+
+.balance-container > p {
+  padding: 9px 23px;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+}
+.balance-container > .use-balance {
+  background-color: #fff9aa;
+}
+
+.balance-container > span {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #a8a8a8;
 }

@@ -1,0 +1,17 @@
+.toggle-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.5s;
+}
+
+.toggle-label::before {
+  display: inline-block;
+  content: '';
+  border-radius: 50%;
+}
+
+#toggle-checkbox {
+  opacity: 0;
+}
