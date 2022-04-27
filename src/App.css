@@ -92,6 +92,10 @@
   height: 14px;
 }
 
+.toggle-container > #toggle-checkbox:checked + .toggle-label::before {
+  left: 11px;
+}
+
 .full-width {
   position: absolute;
   left: 25px;
@@ -156,8 +160,16 @@
   line-height: 21px;
 } */
 
+.time-frame {
+  position: absolute;
+  left: 28px;
+  top: 217px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 .time-frame-container {
-  width: 484px;
   height: 43px;
   top: 248px;
   display: flex;
@@ -165,11 +177,87 @@
   align-items: center;
 }
 
-.time-frame-container > button {
+.time-frame-container > button,
+.tier-container > button {
   width: 92px;
   height: 37px;
   background-color: #f9fafb;
   border-radius: 30px;
   color: #a2a2a2;
   font-weight: 600;
+}
+
+.accelerated-pay {
+  width: 483px;
+  position: absolute;
+  left: 25px;
+  top: 306px;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+.accelerated-pay > .toggle-label {
+  width: 44px;
+  height: 24px;
+  background: #eaeaea;
+  border-radius: 12px;
+}
+
+.accelerated-pay > .toggle-label::before {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 2px;
+  top: 1px;
+}
+.accelerated-pay > #toggle-checkbox {
+  position: absolute;
+  right: 2px;
+  width: 44px;
+  height: 22px;
+  z-index: 1000;
+}
+.accelerated-pay > #toggle-checkbox:checked + .toggle-label::before {
+  left: 21px;
+}
+
+.tier-container {
+  position: absolute;
+  left: 25px;
+  top: 379px;
+  height: fit-content;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.roi {
+  position: absolute;
+  top: 440px;
+  left: 365px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a3a3a3;
+}
+.roi-box {
+  position: absolute;
+  top: 471px;
+  left: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background: #f9fafb;
+  border: 2px solid #ececec;
+  border-radius: 14px;
+  height: 60px;
+}
+
+.roi-box > p {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 40px;
+  color: #070602;
 }

@@ -23,3 +23,29 @@ export const timeFrame = {
     isActive: false,
   },
 };
+
+export const tierList = {
+  tier1: {
+    label: 'Tier 1',
+    isActive: false,
+  },
+
+  tier2: {
+    label: 'Tier 2',
+    isActive: false,
+  },
+
+  tier3: {
+    label: 'Tier 3',
+    isActive: false,
+  },
+  tier4: {
+    label: 'Tier 4',
+    isActive: false,
+  },
+
+  tier5: {
+    label: 'Tier 5',
+    isActive: false,
+  },
+};

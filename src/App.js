@@ -3,7 +3,7 @@ import './App.css';
 import Toggle from './components/Toggle';
 import ButtonBox from './components/ButtonBox';
 // Import data
-import { timeFrame } from './const';
+import { timeFrame, tierList } from './const';
 function App() {
   return (
     <div className='App'>
@@ -37,7 +37,23 @@ function App() {
           arr={Object.keys(timeFrame)}
           obj={timeFrame}
         />
-        <div className='accelerated-pay'></div>
+        <div className='accelerated-pay'>
+          <p>Enable Accelerated APY</p>
+          <Toggle />
+        </div>
+
+        <ButtonBox
+          classNAme='tier-container full-width'
+          arr={Object.keys(tierList)}
+          obj={tierList}
+        />
+
+        <p className='roi'>ROI at Current Rates</p>
+
+        <div className='full-width roi-box'>
+          <img src='assets/pencil.jpg' alt='pencil' />
+          <p>100.0 USD </p>
+        </div>
       </div>
     </div>
   );
