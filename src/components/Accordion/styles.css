@@ -1,0 +1,42 @@
+.accordion-container {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  height: 130px;
+}
+.apy {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #070602;
+}
+.apy-percentage {
+  position: absolute;
+  right: 0px;
+  top: 1px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: right;
+  color: #fac200;
+}
+.accordion-container > ul {
+  position: absolute;
+  left: 49px;
+  top: 51px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a3a3a3;
+}
+li {
+  margin-bottom: 8px;
+}

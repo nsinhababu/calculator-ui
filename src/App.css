@@ -11,12 +11,12 @@
 .container {
   position: relative;
   width: 534px;
-  height: 697px;
+  min-height: 697px;
   background: #ffffff;
   border-radius: 20px;
-  border: 1px solid black;
   padding: 0 25px;
-  margin-top: 10px;
+  margin: 10px auto;
+  max-height: 832px;
 }
 .close-btn {
   background: url('../public/assets/icon.png');
@@ -213,7 +213,7 @@
 }
 .accelerated-pay > #toggle-checkbox {
   position: absolute;
-  right: 2px;
+  right: 0px;
   width: 44px;
   height: 22px;
   z-index: 1000;
@@ -260,4 +260,78 @@
   font-size: 27px;
   line-height: 40px;
   color: #070602;
+}
+
+.gift {
+  position: absolute;
+  left: 404px;
+  top: 542px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #a8a8a8;
+}
+
+.btn-container {
+  position: absolute;
+  left: 25px;
+  top: 576px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-container > button {
+  /* padding: 14px 100px; */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 15px;
+  width: 228px;
+  height: 49px;
+}
+
+.apply-btn {
+  background: #000000;
+  opacity: 0.8;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+}
+
+.cancel-btn {
+  background: #ffffff;
+  color: #666666;
+  border: 1px solid #666666;
+}
+
+.show-details {
+  position: absolute;
+  top: 650px;
+  left: 25px;
+  min-height: fit-content;
+}
+
+.s-d-text-btn-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.show-details-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #070602;
+  font-weight: 500;
+}
+
+.show-details-btn {
+  background-color: #ffffff;
+}
+.show-details > div > button > img {
+  width: 12px;
 }
